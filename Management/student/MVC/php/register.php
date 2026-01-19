@@ -11,6 +11,13 @@ if (isset($_POST['register'])) {
         die("Passwords do not match!");
     }
 
-    
+    $sql = "INSERT INTO students (full_name, email, password) VALUES ('$full_name', '$email', '$password')";
+
+    if (mysqli_query($conn, $sql)) {
+        header("Location: ../html/login.php?success=1");
+    } else {
+        header("Location: ../html/register.php?error=email");
+    }
+    exit();
 }
 ?>
