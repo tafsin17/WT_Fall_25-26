@@ -5,7 +5,10 @@
     display: flex;
     justify-content: space-between;
 }
-
+.container { 
+    padding: 20px; 
+    text-align: center; 
+}
 .card { 
     display: inline-block;
     padding: 20px;
