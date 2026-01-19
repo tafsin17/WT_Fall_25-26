@@ -11,7 +11,8 @@
             <input type="text" name="full_name" placeholder="Full Name" required>
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
-            
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit" name="register">Register</button>
         </form>
     </div>
 </body>
